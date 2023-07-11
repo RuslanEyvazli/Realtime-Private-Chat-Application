@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;700&family=Urbanist:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Urbanist', sans-serif;
+    .formContainer{
+        background-color: #8873ef;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #4f4486;
+        .formWrapper{
+            background-color:white;
+            padding: 50px 70px 20px 120px;
+            border-radius: 5px;
+            border-top-left-radius: 222px ;
+            border-bottom-left-radius: 32px ;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                input{
+                    padding: 15px;
+                    border: none ;
+                    border-bottom: 1px solid #9689d6;
+                    width: 250px;
+                    color: #9689d6;
+                    &::placeholder{
+                        color: #8873ef;
+                    }
+                    &:focus{
+                        color: #9689d6;
+                        outline: none;
+                    }
+                }
+                button{
+                    padding: 15px;
+                    background-color: #9689d6;
+                    border: none;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                label{
+                    height: 6vh;
+                    display: flex;
+                    align-items: end;
+                    gap:10px;
+                    cursor: pointer;
+                    img{
+                        height: 100%;
+                    }
+                    span{
+                        font-size: 18px;
+                    }
+                }
+            }
+            p{
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            .logo{
+                color: #6759b1;
+                font-weight: bold;
+                font-size: 32px;
+            }
+            .title{
+                color: #6759b1;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}
